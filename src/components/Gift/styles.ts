@@ -23,7 +23,6 @@ const ribbonCommons = css`
 `
 export const VerticalRibbon = styled.div`
   ${ribbonCommons}
-  position: absolute;
   width: 15px;
   height: 85px;
 `
