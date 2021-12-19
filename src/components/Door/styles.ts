@@ -5,16 +5,14 @@ interface ISelectionProps {
 }
 
 const selectedColor = '#b79c14'
-const doorHeight = 310
-const doorWidth = 200
 
 export const Container = styled.div<ISelectionProps>`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: ${doorWidth}px;
-  height: ${doorHeight}px;
+  width: 200px;
+  height: 310px;
   margin: 5px;
 
   /* door */
