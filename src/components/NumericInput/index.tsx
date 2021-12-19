@@ -14,16 +14,22 @@ const NumericInput: React.FC<INumericInputProps> = ({
   canIncrement = true,
   onChange
 }) => {
+  const canDecrement = value - 1 > 0
+
   const handleIncrement = () => canIncrement && onChange(value + 1)
-  const handleDecrement = () => value - 1 > 0 && onChange(value - 1)
+  const handleDecrement = () => canDecrement && onChange(value - 1)
 
   return (
     <Container>
       <Text>{text}</Text>
       <Value>{value}</Value>
       <Buttons>
-        <button onClick={handleDecrement}>-</button>
-        <button onClick={handleIncrement}>+</button>
+        <button onClick={handleDecrement} disabled={!canDecrement}>
+          -
+        </button>
+        <button onClick={handleIncrement} disabled={!canIncrement}>
+          +
+        </button>
       </Buttons>
     </Container>
   )
