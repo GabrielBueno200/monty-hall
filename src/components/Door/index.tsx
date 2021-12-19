@@ -1,14 +1,40 @@
-import React from 'react'
+import React, { useState, MouseEvent } from 'react'
+import { useGame } from '../../contexts/game'
+import Gift from '../Gift'
 import { Body, Container, Floor, Handle, Number, Structure } from './styles'
 
-const Door: React.FC = () => {
+interface IDoorProps {
+  doorNumber: number
+  hasGift: boolean
+}
+
+const Door: React.FC<IDoorProps> = ({ doorNumber, hasGift }) => {
+  const { selectedDoor, setSelectedDoor } = useGame()
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const isSelected = doorNumber === selectedDoor
+
+  const handleOpenDoor = (e: MouseEvent) => {
+    e.stopPropagation()
+    setIsOpen(true)
+  }
+
   return (
-    <Container isSelected={false}>
-      <Structure>
-        <Body>
-          <Number>0</Number>
-          <Handle />
-        </Body>
+    <Container
+      isSelected={isSelected}
+      isOpen={isOpen}
+      onClick={() => setSelectedDoor(doorNumber)}
+    >
+      <Structure className="door-structure">
+        {!isOpen ? (
+          <Body className="body">
+            <Number className="number">{doorNumber}</Number>
+            <Handle className="handle" onClick={handleOpenDoor} />
+          </Body>
+        ) : (
+          hasGift && <Gift />
+        )}
       </Structure>
 
       <Floor />
