@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import type { NextPage } from 'next'
 import { Container, Doors, RestartButton } from '../styles/pages/game'
 import { useGame } from '../contexts/game'

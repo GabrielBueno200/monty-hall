@@ -23,6 +23,7 @@ export const GameProvider: React.FC = ({ children }) => {
     }
 
     setDoors(doors)
+    setSelectedDoor(undefined)
   }
 
   return (

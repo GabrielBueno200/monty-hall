@@ -24,6 +24,12 @@ export const Buttons = styled.div`
 
   button {
     padding: 5px 0;
-    width: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
   }
 `
