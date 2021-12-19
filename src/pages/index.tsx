@@ -24,6 +24,7 @@ const Home: NextPage = () => {
         <Card backgroundColor="#c0392c">
           <h1>Monty Hall</h1>
         </Card>
+
         <Card>
           <NumericInput
             text="Qtde de portas"
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
           />
         </Card>
       </div>
+
       <div>
         <Card>
           <NumericInput
@@ -41,6 +43,7 @@ const Home: NextPage = () => {
             canIncrement={choosenDoor < doorsAmount}
           />
         </Card>
+
         <Card backgroundColor="#28a085">
           <Link href="/game">
             <StartGameButton onClick={handleInitGame}>

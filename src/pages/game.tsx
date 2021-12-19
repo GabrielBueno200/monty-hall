@@ -7,8 +7,9 @@ import { useRouter } from 'next/router'
 
 const Game: NextPage = () => {
   const router = useRouter()
-
   const { doors } = useGame()
+
+  const handleRestartGame = () => router.push('/')
 
   return (
     <Container>
@@ -18,9 +19,7 @@ const Game: NextPage = () => {
         ))}
       </Doors>
 
-      <RestartButton onClick={() => router.push('/')}>
-        Reiniciar jogo
-      </RestartButton>
+      <RestartButton onClick={handleRestartGame}>Reiniciar jogo</RestartButton>
     </Container>
   )
 }
