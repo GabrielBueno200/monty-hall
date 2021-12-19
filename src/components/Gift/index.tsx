@@ -1,17 +1,11 @@
 import React from 'react'
-import {
-  Body,
-  Container,
-  HorizontalRibbon,
-  Lid,
-  VerticalRibbon
-} from './styles'
+import { Box, Container, HorizontalRibbon, Lid, VerticalRibbon } from './styles'
 
 const Gift: React.FC = () => {
   return (
     <Container>
       <Lid />
-      <Body />
+      <Box />
       <VerticalRibbon />
       <HorizontalRibbon />
     </Container>

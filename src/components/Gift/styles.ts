@@ -1,19 +1,24 @@
 import styled, { css } from 'styled-components'
 
+const lidHeight = 25
+const boxHeight = 60
+const giftHeight = lidHeight + boxHeight
+
 export const Container = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 `
+
 export const Lid = styled.div`
   width: 100px;
-  height: 25px;
+  height: ${lidHeight}px;
   background-color: #7aa944;
 `
-export const Body = styled.div`
+export const Box = styled.div`
   width: 90px;
-  height: 60px;
+  height: ${boxHeight}px;
   background-color: #5c7e32;
 `
 
@@ -24,7 +29,7 @@ const ribbonCommons = css`
 export const VerticalRibbon = styled.div`
   ${ribbonCommons}
   width: 15px;
-  height: 85px;
+  height: ${giftHeight}px;
 `
 
 export const HorizontalRibbon = styled.div`
