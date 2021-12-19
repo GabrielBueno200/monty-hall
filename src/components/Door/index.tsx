@@ -26,7 +26,7 @@ const Door: React.FC<IDoorProps> = ({ doorNumber, hasGift }) => {
       isOpen={isOpen}
       onClick={() => setSelectedDoor(doorNumber)}
     >
-      <Structure className="door-structure">
+      <Structure className="structure">
         {!isOpen ? (
           <Body className="body">
             <Number className="number">{doorNumber}</Number>

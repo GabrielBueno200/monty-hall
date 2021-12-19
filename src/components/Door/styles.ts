@@ -16,7 +16,7 @@ export const Container = styled.div<IContainerProps>`
   height: 310px;
   margin: 5px;
 
-  .door-structure {
+  .structure {
     border: 5px solid
       ${props => (!props.isSelected ? '#300808' : selectedColor)};
     border-bottom: none;
