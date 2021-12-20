@@ -1,13 +1,13 @@
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/antuniooh/sonetos-project">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/GabrielBueno200/monty-hall">
 
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/antuniooh/sonetos-project">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/GabrielBueno200/monty-hall">
   
-  <a href="https://github.com/antuniooh/sonetos-project/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/antuniooh/sonetos-project">
+  <a href="https://github.com/GabrielBueno200/monty-hall">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/GabrielBueno200/monty-hall">
   </a>
   
-   <img alt="GitHub" src="https://img.shields.io/github/license/antuniooh/sonetos-project">
+   <img alt="GitHub" src="https://img.shields.io/github/license/GabrielBueno200/monty-hall">
 </p>
 
 <!-- PROJECT LOGO -->
