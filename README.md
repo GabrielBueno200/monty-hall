@@ -55,6 +55,10 @@ React/Next.js front-end application that simulates the game [Monty-hall paradox]
 
 <!-- HOW TO RUN -->
 ## 🚀 How To Run
+ 
+⚠️ You can see the project in the following link: https://monty-hall-problem-arx4bma3p-gabrielbueno200.vercel.app/ ⚠️
+
+### If you prefer to run in your machine: 
 
 First, run the development server:
 
